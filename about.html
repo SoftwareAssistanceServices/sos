@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container fade-in">
+                <a href="index.html"><img src="assets/images/sus.png" alt="sos" class="logo fade-in"></a>
+                <ul class="nav-links fade-in">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#" onclick="scrollToSection('team')">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about fade-in">
+            <div class="container fade-in">
+                <h1>About Us</h1>
+            
+                   <h2>Our Mission</h2>
+                    
+                    <p>At SOS!., we are dedicated to empowering individuals and businesses with top-notch freelancing services. Our mission is to deliver exceptional quality across various domains, ensuring that our clients achieve their goals with ease and efficiency. With a team of experienced professionals, we pride ourselves on providing tailored solutions that meet your unique needs.</p>
+                    
+                    <h2>Our Services</h2>
+                    
+                    <h3>1. Python Programming</h3>
+                    <p>Our Python experts offer comprehensive programming services, from developing robust python scripts and provide a session to make you understand the code clearly, we have you covered.</p>
+                    
+                    <h3>2. Machine Learning</h3>
+                    <p>Unlock the potential of your data with our machine learning solutions. We specialize in building predictive models, classification algorithms, and data-driven insights to help you make informed decisions and drive innovation.</p>
+                    
+                    <h3>3. Excel Work</h3>
+                    <p>Optimize your data management with our Excel services. we ensure that your spreadsheets are efficient, accurate, and insightful.</p>
+                    
+                    <h3>4. Web Design</h3>
+                    <p>Create a stunning online presence with our web design services. We craft visually appealing and user-friendly websites tailored to your brand's identity, ensuring a seamless experience for your visitors.</p>
+                    
+                    <h3>5. Professional Portfolio</h3>  
+                    <p>Showcase your skills and achievements with a professionally designed portfolio. We help you to highlight your best work, enhancing your personal or business brand and making a lasting impression.</p>
+                    
+                    <h3>6. Resume Building</h3>
+                    <p>Stand out in the job market with a compelling resume. Our resume building services focus on presenting your skills and experiences effectively, giving you the best chance to land your dream job.</p>
+                    
+                    <h3>7. Knowledge Sharing</h3>
+                    <p>Empower your team or audience with our knowledge-sharing services. We offer training sessions, workshops, and consultations on various topics, helping you and your team stay ahead in your field.</p>
+                    
+                    <h3>8. Photo & Video Editing</h3>
+                    <p>Enhance your visual content with our professional photo and video editing services. We provide high-quality editing, retouching, and production to make your media stand out and communicate your message effectively.</p>
+                    
+                    <h1>Why Choose Us?</h1>
+                    <ul>
+                    <li>- Expert Team**: Our team consists of skilled professionals with years of experience in their respective fields.</li>
+                    <li>- Tailored Solutions**: We provide customized services to meet your specific needs and objectives.</li>
+                    <li>- Quality Assurance**: We are committed to delivering high-quality results that exceed your expectations.</li>
+                    <li>- Client Satisfaction**: Your satisfaction is our top priority, and we strive to build long-lasting relationships with our clients.</li>
+                    </ul>
+                    <h1>Get in Touch</h1>
+                    
+                    <p> to take your project to the next level? Contact us today to discuss your needs and how we can assist you. We look forward to working with you!... click here to <a href="mailto:sosmailservice@gmail.com">communicate us</a></p>
+            </div>
+        </section>
+
+        <section id="team" class="team fade-in">
+            <div class="container fade-in">
+                <h2>Meet Our Team</h2>
+                <div class="team-members fade-in">
+                    <div class="team-member fade-in">
+                        <img src="assets/images/baala.png" alt="Team Member 2">
+                        <h4>BaalaKumaran</h4>
+                        <p>UI/UX Engg. & Designer</p>
+                    </div>
+                    <div class="team-member fade-in">
+                        <img src="assets/images/dhinesh.png" alt="Team Member 2">
+                        <h4>Dhinesh</h4>
+                        <p>Frontend Dev. & Designer</p>
+                    </div>
+                    <div class="team-member fade-in">
+                        <img src="assets/images/kings.png" alt="Team Member 2">
+                        <h4>KinglinVershis</h4>
+                        <p>Frontend Developer</p>
+                    </div>
+                    <div class="team-member fade-in">
+                        <img src="assets/images/saravanan.png" alt="Team Member 2">
+                        <h4>Saravanan</h4>
+                        <p>Frontend Developer</p>
+                    </div>
+                    <div class="team-member fade-in">
+                        <img src="assets/images/dhanush.png" alt="Team Member 1">
+                        <h4>DhanushBharathi</h4>
+                        <p>Python Developer</p>
+                    </div>
+                    <div class="team-member fade-in">
+                        <img src="assets/images/vicky.png" alt="Team Member 2">
+                        <h4>Vignesh</h4>
+                        <p>Editor</p>
+                    </div>
+                    <div class="team-member fade-in">
+                        <img src="assets/images/karthi.jpeg" alt="Team Member 2">
+                        <h4>Karthikeyan</h4>
+                        <p>Editor</p>
+                    </div>
+                    <!-- Add more team members as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-in">
+            <div class="container fade-in">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+                <p>Email: sosmailservice@gmail.com</p>
+                <p>Instagram : _.sos._.servics._</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container fade-in">
+            <p>&copy; 2024 SOS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+    //scrolling to a sectiom
+    function scrollToSection(id) {
+        const element = document.getElementById(id);
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offset = window.innerHeight / 2 - element.clientHeight / 2;
+        const scrollToPosition = elementPosition - offset;
+    
+        window.scrollTo({
+            top: scrollToPosition,
+            behavior: 'smooth'
+        });
+    }
+
+
+
+        
+document.addEventListener('DOMContentLoaded', function () {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+        threshold: 0.1  // Trigger the effect when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // Stop observing once the element has been revealed
+            }
+        });
+    }, observerOptions);
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+    </script>
+</body>
+</html>

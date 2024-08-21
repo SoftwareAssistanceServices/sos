@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sos</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favico.jpeg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header data-header title="data-header" id="home">
+
+    <div class="container fade-in">
+
+      <nav class="navbar fade-in">
+
+        <a href="#">
+          <img src="./assets/images/light.jpg" alt="SimpleBlog logo" width="150" class="logo-light">
+          <img src="./assets/images/dark.jpg" alt="SimpleBlog logo" width="150" class="logo-dark">
+        </a>
+
+        <div class="btn-group fade-in">
+
+          <button class="theme-btn theme-btn-mobile light fade-in">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn fade-in">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper fade-in">
+
+          <ul class="desktop-nav fade-in">
+
+            <li>
+              <a href="#home" class="nav-link fade-in">Home</a>
+            </li>
+
+            <li>
+              <a href="#" onclick="scrollToSection('services')" class="nav-link fade-in">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#" onclick="scrollToSection('project')" class="nav-link fade-in">Our Projects</a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/_.sos._.service._/" class="nav-link fade-in">Instagram</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light fade-in">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav fade-in">
+
+          <button class="nav-close-btn fade-in">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper fade-in">
+
+            <p class="h3 nav-title fade-in">Main Menu</p>
+
+            <ul>
+              <li class="nav-item fade-in">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="#" onclick="scrollToSection('project')" class="nav-link">Our Projects</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="#" class="nav-link db">Mail Us</a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/_.sos._.service._/" class="nav-link fade-in">Instagram</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title fade-in">Services</p>
+
+            <ul>
+              <li class="nav-item fade-in">
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Python</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Machine Learning</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Excel Works</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Web design</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Professional Portfolio</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Resume Building</a>
+              </li>
+
+              <li class="nav-item fade-in"> 
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Knowleding</a>
+              </li>
+
+              <li class="nav-item fade-in">
+                <a href="https://forms.gle/FezekQAVgYVPr71T9" class="nav-link fade-in">Photo & Video Editing</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero fade-in">
+
+      <div class="container fade-in">
+
+        <div class="left fade-in">
+
+          <h1 class="h1 fade-in">
+            Hi, <b>Students&nbsp;& Friends</b>.
+            <br>Welcome
+          </h1>
+
+          <p class="h3 fade-in">
+            We Love To Assist With You!.
+          </p>
+
+          <div class="btn-group fade-in">
+            <a href="https://forms.gle/FezekQAVgYVPr71T9" class="btn btn-primary fade-in">Book a Service</a>
+            <a href="#"  onclick="window.location.href='about.html'" class="btn btn-secondary fade-in">About Us</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box fade-in">
+            <img src="./assets/images/sus.png" alt="SOS" class="hero-img fade-in">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <h2 class="h2" id="services" style="text-align: center;padding: 10px;">Scroll down to see our services!.</h2>
+
+      <div class="container1 fade-in">
+      <!-- Section 2 -->
+      <div class="full" id="python-coding">
+          <div class="carousel">
+              <div class="carousel-item">
+                  <h2>Python Coding Support and Debugging</h2>
+              </div>
+              <div class="carousel-item">
+                  <p>Helps to create codes with python programming language</p>
+              </div>
+              <div class="carousel-item">
+                  <p>Giving assistance for your code, clearing doubts, and assisting in debugging the errors!</p>
+              </div>
+              <div class="carousel-item">
+                  <p>Provides a report with detailed data.</p>
+              </div>
+              <div class="carousel-item">
+                  <p>For more information on charges and to get in touch, Click <a href="https://forms.gle/FezekQAVgYVPr71T9">sosmailservice.com</a></p>
+              </div>
+          </div>
+          <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container1 fade-in">
+      <!-- Section 3 -->
+      <div class="full" id="excel-support">
+          <div class="carousel">
+              <div class="carousel-item">
+                  <h2>Excel Support and Auditing Assistance</h2>
+              </div>
+              <div class="carousel-item">
+                  <p>Collecting and providing the data with which you need!</p>
+              </div>
+              <div class="carousel-item">
+                  <p>Data Entry assistance.</p>
+              </div>
+              <div class="carousel-item">
+                  <h3>Charges and Contact</h3>
+                  <p>For more information on charges and to get in touch, click: <a href="https://forms.gle/FezekQAVgYVPr71T9">sosmailservice.com</a></p>
+              </div>
+          </div>
+          <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+      </div>
+    </div>
+
+      <div class="container1 fade-in">
+      <!-- Section 4 -->
+      <div class="full" id="ml-dl">
+          <div class="carousel">
+              <div class="carousel-item">
+                  <h2>Project Assistance for ML, DL Projects (AI)</h2>
+              </div>
+              <div class="carousel-item">
+                  <p>We can help you with your ML and DL projects. If you have a specific project in mind, please share more details so I can provide more targeted guidance.</p>
+              </div>
+              <div class="carousel-item">
+                  <p>We approach such projects with a general outline.</p>
+              </div>
+              <div class="carousel-item">
+                  <h3>Charges and Contact</h3>
+                  <p>For more information on charges and to get in touch, click: <a href="https://forms.gle/FezekQAVgYVPr71T9">sosmailservice.com</a></p>
+              </div>
+          </div>
+          <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container1 fade-in">
+      <!-- Section 5 -->
+      <div class="full" id="Knowleding">
+          <div class="carousel">
+              <div class="carousel-item">
+                  <h2>General Knowledging</h2>
+              </div>
+              <div class="carousel-item">
+                  <p>Sessions on the topic you need!</p>
+              </div>
+              <div class="carousel-item">
+                  <p>Detailing and clearing the desired topic and doubts!</p>
+              </div>
+              <div class="carousel-item">
+                  <h3>Charges and Contact</h3>
+                  <p>For more information on charges and to get in touch, click: <a href="https://forms.gle/FezekQAVgYVPr71T9">sosmailservice.com</a></p>
+              </div>
+          </div>
+          <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+      </div>
+    </div>
+
+    <div class="container1 fade-in">
+      <!-- Section 6 -->
+      <div class="full" id="frontend-designing">
+          <div class="carousel">
+              <div class="carousel-item">
+                  <h2>Frontend Designing</h2>
+              </div>
+              <div class="carousel-item">
+                  <p>Making professional and interactive portfolios.</p>
+              </div>
+              <div class="carousel-item">
+                  <p>Designing webpages.</p>
+              </div>
+              <div class="carousel-item">
+                  <p>Resume Building</p>
+                  <p>UI and UX designing with Figma.</p>
+              </div>
+              <div class="carousel-item">
+                  <h3>Charges and Contact</h3>
+                  <p>For more information on charges and to get in touch, click: <a href="https://forms.gle/FezekQAVgYVPr71T9">sosmailservice.com</a></p>
+              </div>
+          </div>
+          <div class="dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+    <div class="main fade-in">
+
+      <div class="container fade-in">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+
+          <h2 class="h2" id="project">Our Latest Projets</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/project1.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">WebDesign</button>
+
+                <h3>
+                  <a href="https://royalian28.github.io/PortFolio/" class="h3">
+                    Building a Responsive Portfolio
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  A professional portfolio website with a dark theme. It features a welcoming message, "Welcome You to my Portfolio," 
+                  and a prominent "GET IN TOUCH" button. The site includes navigation links for Home, About, Skills, Portfolio, and Contact, along with social media icons.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/" alt="admin" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">admin</a>
+
+                    <p class="text-sm">
+                      <time datetime="2024-08-15">Aug 15, 2024</time>
+                      <span class="separator"></span>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+          <button class="btn load-more">Load More</button>
+
+        </div>
+
+
+
+
+
+        <!--
+          - ASIDE
+        -->
+
+        <div class="aside fade-in">
+
+          <div class="topics fade-in">
+
+            <h2 class="h2 fade-in">Hot Topics</h2>
+
+            <a href="#" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="logo-python"></ion-icon>
+              </div>
+
+              <p>Python</p>
+            </a>
+
+            <a href="#" class="topic-btn fade-in">
+              <div class="icon-box">
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </div>
+
+              <p>Web Design</p>
+            </a>
+
+            <a href="#" class="topic-btn fade-in">
+              <div class="icon-box">
+                <ion-icon name="videocam-outline"></ion-icon>
+              </div>
+
+              <p>Video Editing</p>
+            </a>
+
+            <a href="#" class="topic-btn fade-in">
+              <div class="icon-box">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </div>
+
+              <p>Resume Build</p>
+            </a>
+
+          </div>
+
+          <div class="tags fade-in">
+
+            <h2 class="h2 fade-in">Tags</h2>
+
+            <div class="wrapper fade-in">
+
+              <button class="hashtag" onclick="window.location.href='https://www.w3schools.com/python'">#python</button>
+              <button class="hashtag" onclick="window.location.href='https://www.w3schools.com/python/python_ml_getting_started.asp'">#machinelearning</button>
+              <button class="hashtag" onclick="window.location.href=''">#webdesign</button>
+              <button class="hashtag" onclick="window.location.href='https://royalian28.github.io/PortFolio/'">#portfolio</button>
+              <button class="hashtag" onclick="window.location.href='https://www.bing.com/ck/a?!&&p=8d1a37a43de46774JmltdHM9MTcyMzY4MDAwMCZpZ3VpZD0xMjEyYTU1Zi0zNmMwLTY2ZWUtMjZkMC1iNjhjMzc3MjY3ZWMmaW5zaWQ9NTU1Ng&ptn=3&ver=2&hsh=3&fclid=1212a55f-36c0-66ee-26d0-b68c377267ec&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZnJvbnQrZW5kK3R1dG9yaWFscyZtaWQ9ODBEMkJFOTJEMTM2Njk0MkQ4OTY4MEQyQkU5MkQxMzY2OTQyRDg5NiZGT1JNPVZJUkU&ntb=1'">#frontend</button>
+              <button class="hashtag" onclick="window.location.href='https://www.w3schools.com/excel'">#excel</button>
+              <button class="hashtag" onclick="window.location.href='https://filmora.wondershare.net/'">#videoediting</button>
+              <button class="hashtag" onclick="window.location.href='https://www.canva.com'">#resumebuilding</button>
+              <button class="hashtag" onclick="window.location.href='https://www.w3schools.com/html'">#HTML</button>
+              <button class="hashtag" onclick="window.location.href='https://www.w3schools.com/css'">#CSS</button>
+              <button class="hashtag" onclick="window.location.href='https://www.w3schools.com/js'">#JS</button>
+
+            </div>
+
+          </div>
+
+          <div class="contact fade-in">
+
+            <h2 class="h2">Let's Talk</h2>
+
+            <div class="wrapper fade-in">
+
+              <p>
+                Do you want to learn more about how we can help you to overcome problems? Let us have a
+                conversation.
+              </p>
+
+              <ul class="social-link fade-in">
+
+                <li>
+                  <a href="https://www.instagram.com/.sos..service._?igsh=MWh4d3pkczllaGxxOQ==" class="icon-box fade-in">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:sosmailservice@gmail.com" class="icon-box fade-in">
+                    <ion-icon name="mail-unread-outline"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box fade-in">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <div class="newsletter fade-in" id="Support">
+
+            <h2 class="h2 fade-in">Share</h2>
+
+            <div class="wrapper fade-in">
+
+              <p>
+                Support us & Share this website to Your Friends and Family!.
+              </p>
+
+              <form action="#">
+                <button class="btn btn-primary fade-in" onclick="copyToClipboard()">Share</button>
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container fade-in">
+
+      <div class="wrapper fade-in">
+
+        <a href="#" class="footer-logo fade-in">
+          <img src="./assets/images/light.jpg" alt="SimpleBlog Logo" width="150" class="logo-light">
+          <img src="./assets/images/dark.jpg" alt="SimpleBlog Logo" width="150" class="logo-dark">
+        </a>
+
+        <p class="footer-text fade-in">
+          We are here to Assist you in your Hard Tasks!.
+        </p>
+
+      </div>
+
+      <div class="wrapper fade-in">
+
+        <p class="footer-title fade-in">General</p>
+
+        <ul>
+
+          <li>
+            <a href="about.html fade-in" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link db fade-in">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" onclick="copyToClipboard()" class="footer-link fade-in">Support Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper fade-in">
+
+        <p class="footer-title fade-in">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="document.html#privacy-policy" class="footer-link fade-in">Privacy Notice</a>
+          </li>
+
+          <li>
+            <a href="document.html#mail" class="footer-link fade-in">Mail Policy</a>
+          </li>
+
+          <li>
+            <a href="document.html#terms-conditions" class="footer-link fade-in">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright fade-in">
+      &copy; Copyright 2024 <a href="#">Software Assistance Services</a>
+    </p>
+
+  </footer>
+
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

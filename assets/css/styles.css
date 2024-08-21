@@ -1,0 +1,175 @@
+/* Global Styles */
+:root {
+    --font-family: Arial, sans-serif;
+    --color-background: #f4f4f4;
+    --color-primary: #333;
+    --color-secondary: #555;
+    --color-accent: #007BFF;
+    --color-white: #fff;
+    --color-dark: #000;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+}
+
+header {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px; 
+    width: auto;  
+    color: var(--color-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h1, h2, h3 {
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.about li {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.team {
+    background-color: var(--color-white);
+    padding: 2rem 0;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin: 0.5rem 0;
+    color: var(--color-primary);
+}
+
+.team-member p {
+    color: var(--color-secondary);
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+}
+
+.contact p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: var(--color-secondary);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: slight upward translation */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* Final state when the element is in view */
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

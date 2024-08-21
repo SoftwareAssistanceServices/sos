@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentations</title>
+    <style>
+            body {
+            font-family:'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+        .blurred-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            filter: blur(10px); /* Adjust the blur intensity here */
+            z-index: -1; /* Place the blurred background behind other content */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative; /* Ensure content is above the blurred background */
+            z-index: 1;
+            color:#030303;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+        .nav-links {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 0;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px); /* Optional: slight upward translation */
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+/* Final state when the element is in view */
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="blurred-background"></div>
+    <header>
+        <nav class="nav-links fade-in">
+            <a href="#terms-conditions">Terms and Conditions</a>
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#mail">Mail Policy</a>
+        </nav>
+    </header>
+
+    <div class="container fade-in">
+        <section id="terms-conditions" class="fade-in">
+            <h1>Terms and Conditions</h1>
+            <h2>1. Introduction</h2>
+            <p>These Terms and Conditions govern your use of our website and the services provided by us. By accessing or using our website, you agree to comply with and be bound by these terms.</p>
+            <h2>2. Services</h2>
+            <p>We offer a variety of services, including but not limited to Python programming, Machine Learning, Excel Works, Web Design, Professional Portfolio creation, Resume Building, Knowledge Sharing, and Photo & Video Editing.</p>
+            <h2>3. Payments</h2>
+            <p><strong>Advance Payment</strong>: For each service you request, an advance payment is required. The remaining balance is due upon completion of the service.</p>
+            <p><strong>Failure to Pay</strong>: If a client fails to make the required payments, we reserve the right to take legal action, which may include filing a case against the client for non-payment.</p>
+            <p><strong>Refund Policy</strong>: Advance payments are non-refundable. If a service is not delivered on time, the service fee may be waived, but the advance payment will not be refunded.</p>
+            <h2>4. Cancellations and Refunds</h2>
+            <p><strong>Service Cancellations</strong>: Clients may cancel a service by providing written notice. Cancellations may be subject to a cancellation fee, depending on the stage of the service.</p>
+            <p><strong>No Refunds on Completed Work</strong>: Once a service is completed and delivered, no refunds will be issued.</p>
+            <h2>5. Intellectual Property Rights</h2>
+            <p><strong>Ownership of Deliverables</strong>: Upon full payment, the client will own the rights to the deliverables produced. However, we retain the right to use certain proprietary tools and methods.</p>
+            <p><strong>Use of Our Branding</strong>: Clients may not use our name, logo, or branding elements without our explicit consent.</p>
+            <h2>6. Confidentiality</h2>
+            <p><strong>Confidential Information</strong>: Both parties agree to maintain the confidentiality of any sensitive information shared during the project.</p>
+            <p><strong>Non-Disclosure</strong>: Neither party will disclose confidential information to third parties without prior consent.</p>
+            <p><strong>Duration</strong>: Confidentiality obligations will continue even after the completion of the project.</p>
+            <h2>7. Client Responsibilities</h2>
+            <p><strong>Timely Communication</strong>: Clients are expected to respond promptly to requests for information or feedback.</p>
+            <p><strong>Accuracy of Information</strong>: Clients must provide accurate and complete information to avoid potential issues.</p>
+            <h2>8. Dispute Resolution</h2>
+            <p><strong>Mediation/Arbitration</strong>: In the event of a dispute, both parties agree to attempt mediation or arbitration before pursuing legal action.</p>
+            <p><strong>Jurisdiction</strong>: Any legal disputes will be resolved in [Specify Jurisdiction].</p>
+            <h2>9. Limitation of Liability</h2>
+            <p><strong>Cap on Damages</strong>: Our liability is limited to the total fees paid by the client for the service.</p>
+            <p><strong>Exclusion of Certain Damages</strong>: We are not liable for indirect, incidental, or consequential damages.</p>
+            <h2>10. Indemnification</h2>
+            <p>Clients agree to indemnify and hold us harmless against any claims, damages, or expenses arising from their use of our services or any breach of these terms.</p>
+            <h2>11. Data Protection and Privacy</h2>
+            <p><strong>Compliance</strong>: We comply with applicable data protection laws, including GDPR and CCPA, where applicable.</p>
+            <p><strong>Data Processing</strong>: A separate Data Processing Agreement (DPA) is available upon request.</p>
+            <h2>12. Force Majeure</h2>
+            <p>We are not liable for delays or non-performance due to unforeseen events beyond our control, such as natural disasters, pandemics, or strikes.</p>
+            <h2>13. Termination</h2>
+            <p><strong>Termination for Cause</strong>: Either party may terminate the agreement if the other party breaches the terms and fails to rectify the breach within a specified period.</p>
+            <p><strong>Effect of Termination</strong>: Upon termination, all outstanding payments must be settled, and any confidential information returned.</p>
+            <h2>14. Modification of Terms</h2>
+            <p>We reserve the right to modify these Terms and Conditions at any time. Clients will be notified of any significant changes, and continued use of our services constitutes acceptance of the new terms.</p>
+            <h2>15. Third-Party Services</h2>
+            <p>Our website may use third-party services for certain functionalities. By using our services, you agree to comply with the terms of those third-party providers.</p>
+            <h2>16. User-Generated Content</h2>
+            <p><strong>Rights to Use</strong>: We may use, display, or modify any content you upload to our website, such as reviews or comments.</p>
+            <p><strong>Content Responsibility</strong>: You are responsible for ensuring that your content does not violate any laws or third-party rights.</p>
+        </section>
+
+        <section id="privacy-policy" class="fade-in">
+            <h1>Privacy Policy</h1>
+            <h2>1. Introduction</h2>
+            <p>We are committed to protecting your personal information and respecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your information when you use our website and services.</p>
+            <h2>2. Information We Collect</h2>
+            <p><strong>Personal Information</strong>: Includes your name, email address, phone number, payment details, and other information you provide.</p>
+            <p><strong>Automatically Collected Information</strong>: Includes your IP address, browser type, device type, and usage data.</p>
+            <h2>3. How We Use Your Information</h2>
+            <p>We use your information to:</p>
+            <ul>
+                <li><strong>Provide Services</strong>: Process orders, deliver services, and manage your account.</li>
+                <li><strong>Improve Website Functionality</strong>: Analyze usage patterns to enhance user experience.</li>
+                <li><strong>Communicate with You</strong>: Send updates, promotional materials, or respond to inquiries.</li>
+                <li><strong>Process Payments</strong>: Handle transactions, invoicing, and receipts.</li>
+                <li><strong>Comply with Legal Obligations</strong>: Fulfill legal requirements, including tax reporting.</li>
+            </ul>
+            <h2>4. How We Share Your Information</h2>
+            <p><strong>Service Providers</strong>: We may share your information with third-party providers who assist in delivering our services.</p>
+            <p><strong>Legal Requirements</strong>: We may disclose your information if required by law or to protect our rights.</p>
+            <p><strong>Business Transfers</strong>: In the event of a merger or sale, your information may be transferred as part of the transaction.</p>
+            <h2>5. Your Rights</h2>
+            <p><strong>Access and Update</strong>: You have the right to access, correct, or delete your personal information.</p>
+            <p><strong>Opt-Out</strong>: You can opt-out of receiving promotional communications from us at any time.</p>
+            <h2>6. Data Security</h2>
+            <p>We implement reasonable security measures to protect your information from unauthorized access or disclosure.</p>
+            <h2>7. Cookies</h2>
+            <p>We use cookies to enhance your experience on our website. You can manage your cookie preferences through your browser settings.</p>
+            <h2>8. Changes to this Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and you are encouraged to review it periodically.</p>
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions or concerns about this Privacy Policy, please contact us at [Your Contact Information].</p>
+        </section>
+
+        <section id="mail" class="fade-in">
+            <h2>Mail Policies</h2>
+            <h3>1. Introduction</h3>
+            <p>Our Mail Policies outline how we handle personal details provided by clients through email communication. We value your privacy and are committed to protecting the information you share with us.</p>
+            
+            <h3>2. Information We Collect</h3>
+            <p>When clients communicate with us via email, we may collect personal information such as:</p>
+            <ul>
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Other personal details relevant to the service requested</li>
+            </ul>
+        
+            <h3>3. How We Use Your Information</h3>
+            <p>We use the information collected via email to:</p>
+            <ul>
+                <li>Respond to your inquiries and provide customer support</li>
+                <li>Process and manage your service requests</li>
+                <li>Send important updates and information regarding our services</li>
+                <li>Ensure effective communication and provide the services requested</li>
+            </ul>
+        
+            <h3>4. How We Protect Your Information</h3>
+            <p>We take appropriate measures to protect your personal information from unauthorized access, disclosure, or misuse. This includes:</p>
+            <ul>
+                <li>Securing email communications with encryption where feasible</li>
+                <li>Restricting access to your personal information to authorized personnel only</li>
+                <li>Regularly reviewing and updating our security practices</li>
+            </ul>
+        
+            <h3>5. Sharing Your Information</h3>
+            <p>We do not share your personal information with third parties without your consent, except as required by law or to provide the services requested. In such cases, we ensure that any third parties comply with our privacy standards.</p>
+        
+            <h3>6. Your Rights</h3>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Request access to your personal information</li>
+                <li>Correct or update any inaccuracies in your personal details</li>
+                <li>Request the deletion of your personal information, subject to legal obligations</li>
+            </ul>
+        
+            <h3>7. Changes to This Policy</h3>
+            <p>We may update this Mail Policies section from time to time. Any changes will be posted on this page, and we encourage you to review it periodically to stay informed about how we handle your personal information.</p>
+        
+            <h3>8. Contact Us</h3>
+            <p>If you have any questions or concerns about our Mail Policies, please contact us at <a href="mailto:sosmailservice@gmail.com">sosmailservice@gmail.com</a>.</p>
+        </section>
+        
+    </div>
+
+    <footer class="fade-in">
+        <p>&copy; 2024 Sos!.. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+        threshold: 0.1  // Trigger the effect when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // Stop observing once the element has been revealed
+            }
+        });
+    }, observerOptions);
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+    </script>
+</body>
+</html>
