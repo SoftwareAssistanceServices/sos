@@ -170,7 +170,7 @@
             <h2>8. Changes to this Privacy Policy</h2>
             <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page, and you are encouraged to review it periodically.</p>
             <h2>9. Contact Us</h2>
-            <p>If you have any questions or concerns about this Privacy Policy, please contact us at [Your Contact Information].</p>
+            <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="#" class="db">Sosmailservice@gmail.com</a></p>
         </section>
 
         <section id="mail" class="fade-in">
@@ -219,7 +219,7 @@
             <p>We may update this Mail Policies section from time to time. Any changes will be posted on this page, and we encourage you to review it periodically to stay informed about how we handle your personal information.</p>
         
             <h3>8. Contact Us</h3>
-            <p>If you have any questions or concerns about our Mail Policies, please contact us at <a href="mailto:sosmailservice@gmail.com">sosmailservice@gmail.com</a>.</p>
+            <p>If you have any questions or concerns about our Mail Policies, please contact us at <a href="#" class="db">sosmailservice@gmail.com</a>.</p>
         </section>
         
     </div>
@@ -251,6 +251,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+document.querySelectorAll('.db').forEach(button => {
+        button.addEventListener('click', function() {
+            const email = 'sosmailservice@gmail.com';
+            const subject = 'Hi Sos , lets make a deal';
+            const body = 'Please enter what type of services you need, or any other discussions? & please provide ur details for further communications';
+
+            // Encode URI components
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Redirect to mailto link
+            window.location.href = mailtoLink;
+        });
+    });
+
+    
     </script>
 </body>
 </html>
